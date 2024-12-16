@@ -37,9 +37,10 @@ function getMajor(inputMajor, inputFemale, inputIncome){
 var goodMajors = []
     for (var i=0; i < major.length; i++){
 if ((inputMajor == majorCategory[i])&&(inputFemale/100<=parseFloat(shareWomen[i]))&&(inputIncome<=parseFloat(medianIncome[i]))){
-goodMajors.push(major[i])
+goodMajors.push(" "+major[i])
 }
 }
+if(goodMajors.length==0){goodMajors="No Results Found! Adjust your search and try again..." }
 return goodMajors
 }
 console.log(getMajor("Engineering", 30, 0))
@@ -47,9 +48,4 @@ function displayMajor(){
      
     document.getElementById("output").innerHTML = getMajor(document.getElementById("category").value, document.getElementById("female").value, document.getElementById("income").value);
     }
-
-
-
-
-
 
