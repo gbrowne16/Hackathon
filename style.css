@@ -1,0 +1,38 @@
+body{
+       font-family: georgia;
+    background-color: rgb(72, 5, 3);
+    color: white;
+    font-size: 16px;
+  }
+  
+  .row{
+   width: 60%;
+   text-align: center;
+   margin: auto;
+  }
+  
+  label{
+    color: white;
+    font-size: 16px;
+  }
+  
+  p{
+    font-size: 18px;
+  }
+  
+  button{
+    margin-top: 25px;
+    background-color: white;
+    padding: 10px;
+    font-family: cursive;
+    border: none;
+  }
+  
+  header{
+    color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    font-size: 38px;
+    text-align: center;
+ 
+  }
