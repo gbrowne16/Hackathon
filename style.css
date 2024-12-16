@@ -7,10 +7,19 @@ body{
     border:5px solid rgb(107, 104, 104);
   }
   
-  .row{
-   width: 60%;
+  select{
+   width: 25%;
    text-align: center;
    margin: auto;
+   font-family: georgia;
+  }
+
+  input{
+    width: 25%;
+    text-align: center;
+    margin: auto;
+    font-family: georgia;
+
   }
   
   label{
@@ -28,6 +37,7 @@ body{
     margin-top: 25px;
     background-color: white;
     padding: 10px;
+    font-size: 20px;
     font-family: cursive;
     border:5px solid rgb(107, 104, 104);
   }
