@@ -39,14 +39,15 @@ categorySelect.appendChild(el);
 
 function getMajor(inputMajor, inputFemale, inputIncome){
 var goodMajors = []
-
+var femalePercentage=inputFemale/100
     for (var i=0; i < major.length; i++){
       
-if ((inputMajor == majorCategory[i])&&(inputFemale/100<=parseFloat(shareWomen[i]))&&(inputIncome<=parseFloat(medianIncome[i]))){
+if ((inputMajor == majorCategory[i])&&(femalePercentage<=parseFloat(shareWomen[i]))&&(inputIncome<=parseFloat(medianIncome[i+1]))){
 goodMajors.push(" "+major[i])
 }
 }
-if(goodMajors.length==0){goodMajors="No Results Found! Adjust your search and try again..." }
+while(goodMajors.length==0)
+{goodMajors="No Results Found! Adjust your search and try again..." }
 
 
     return goodMajors
