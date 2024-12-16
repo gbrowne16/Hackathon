@@ -7,16 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hackathon Name</h1>
+    <h1>Find My Major!</h1>
   
 
     <label>Major Catagory: </label>
       <select id="category" ></select>
-        
+      <br>
+      <label>Minimum Percent of Women: </label>
+        <input type="text" id="female">
+       
 
-        <input type="range" min="0" max="100" value="0" class="slider" id="female">
-        <input type="range" min="22000" max="110000" value="22000" class="slider" id="income">
-
+        <br> 
+        <label>Minimum Median Income: </label>
+        <input type="text" id="income"> 
+        <br>
+        <br>
         <button onclick=displayMajor()>Find My Major!</button>
 
         <div class="outputBox" id="outputBox">
