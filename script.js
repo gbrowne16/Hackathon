@@ -6,7 +6,7 @@ var majorCategory = getColumn(url,6);
 var shareWomen = getColumn(url,7);
 var medianIncome = getColumn(url,11)
 
-//majorCategory.splice(0,0,"Choose major here")
+
 document.getElementById("female").value="Enter number here";
 document.getElementById("income").value="Enter number here";
 
@@ -16,7 +16,7 @@ if (!(uniqueCategories.includes(majorCategory[i])))
     uniqueCategories.push(majorCategory[i])
 
 }
-
+uniqueCategories.splice(0,0,"Choose major here")
 
 //refers to dropdown
 var categorySelect = document.getElementById("category");
@@ -36,6 +36,9 @@ categorySelect.appendChild(el);
 
 
 }
+
+
+
 
 function getMajor(inputMajor, inputFemale, inputIncome){
 var goodMajors = []
