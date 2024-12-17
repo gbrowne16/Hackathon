@@ -39,7 +39,7 @@ categorySelect.appendChild(el);
 
 
 
-
+//This function returns a list of majors that would be good for that person
 function getMajor(inputMajor, inputFemale, inputIncome){
 var goodMajors = []
 var femalePercentage=inputFemale/100
@@ -55,7 +55,8 @@ while(goodMajors.length==0)
 
     return goodMajors
 }
-
+//this function displays the majors on the screen by running the getMajor function
+//with the user inputs as parameters
 function displayMajor(){
     if(document.getElementById("female").value=="Enter number here"){document.getElementById("female").value=0};
     if(document.getElementById("income").value=="Enter number here"){document.getElementById("income").value=0};
