@@ -1,10 +1,15 @@
 body{
-       font-family: georgia;
+       
     background-color: rgb(23, 3, 72);
     color: white;
     font-size: 16px;
     padding: 10px;
     border:5px solid rgb(107, 104, 104);
+ 
+      font-family: "Amarante", serif;
+      font-weight: 400;
+      font-style: normal;
+  
   }
   
   select{
@@ -48,6 +53,8 @@ body{
     margin-bottom: 10px;
     font-size: 38px;
     text-align: center;
+  
+    
  
   }
 
