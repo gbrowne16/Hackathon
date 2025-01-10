@@ -6,8 +6,9 @@ var majorCategory = getColumn(url,6);
 var shareWomenDecimal = getColumn(url,7);
 var shareWomen=[]
 var i=0
-while(shareWomen.length<shareWomenDecimal.length){
-     shareWomen.push(shareWomenDecimal[i]*100); var i=i+1;
+while(i<shareWomenDecimal.length){
+     shareWomen.push(shareWomenDecimal[i]*100); 
+    i++;
 
 }
 console.log(shareWomen)
